@@ -1,0 +1,48 @@
+body{
+	background-image: url(to-do-list.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+label{
+	margin-left: 15px;
+	margin-top: 5px;
+	font-size: 20px;
+	margin-right: 10px;
+}
+#tasks{
+	text-shadow: 2px 2px 3px white;
+}
+#newTaskShadow{
+	text-shadow: 1px 1px 5px white;
+}
+button{
+	margin-left: 15px;
+}
+#entries{
+	margin-left: 10px;
+	font-weight: bold;
+}
+h1{
+	text-shadow: 1px 1px 1px white;
+}
+.btn{
+	width: 100px;
+}
+.btn-primary{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.btn-danger{
+	margin: 5px 10px 10px 10px;
+}
+#allEntries{
+	margin-left: 10px;
+}
+#newTask{
+	width: 200px;
+	border-radius: 10px;
+}
+#fxw{
+	display: flex;
+	flex-wrap: wrap;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+	<title>Document</title>
+	<script src="script.js"></script>
+</head>
+<body>
+	<form onsubmit="return doSearch()">
+		<p>
+			Add Task: <input type="text" id="txtSearch" />
+		</p>
+		<p>
+			<input type="submit" value="Add" id="btnSearch" />
+			<input type="checkbox" id="chkAlert" /> Show alert?
+		</p>
+		<div id="searchOutput"></div>
+		<div>
+			<h2>Tasks:</h2>
+			<div id="searchHistory"></div>
+		</div>
+	</form>
+</body>
+</html>
