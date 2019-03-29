@@ -16,9 +16,9 @@ function add(){
 	console.log(todos);		
 }
 function clearAll() {
-  var checkBox = document.getElementById("todo${item.itemid}");
-  let inputData = document.getElementById("newTask");
-  if (checkBox.checked == true){
-		iDiv.innerHTML = "";
-  }
+	var checkBox = document.getElementById("todo${item.itemid}");
+	let inputData = document.getElementById("newTask");
+	if (checkBox.checked == true){
+		document.getElementById("todo${item.itemid}").innerHTML = "";
+	}
 }
