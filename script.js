@@ -2,11 +2,9 @@ const todos = [];
 var iLI;
 function add(){
 	let task = document.querySelector("#newTask").value;
-	if (task != "") {
-		document.querySelector("#newTask").value = "";
-	}
 	iLI = document.createElement('LI');
 	iLI.innerHTML = task;
+	
 	document.querySelector('#entries').appendChild(iLI);
 
 	let inputData = document.getElementById("newTask");
@@ -14,6 +12,9 @@ function add(){
 	todos.push(inputData.value);
 
 	console.log(todos);		
+	if (task != "") {
+		document.querySelector("#newTask").value = "";
+	}
 }
 // iDiv.innerHTML = "<input id='todo${item.itemid}' type='checkbox'/>&nbsp;" + 
 // function clearAll() {
