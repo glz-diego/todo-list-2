@@ -1,13 +1,13 @@
 const todos = [];
-var iDiv;
+var iLI;
 function add(){
 	let task = document.querySelector("#newTask").value;
 	if (task != "") {
 		document.querySelector("#newTask").value = "";
 	}
-	iDiv = document.createElement('div');
-	iDiv.innerHTML = "<input id='todo${item.itemid}' type='checkbox'/>&nbsp;" + task;
-	document.querySelector('#entries').appendChild(iDiv);
+	iLI = document.createElement('LI');
+	iLI.innerHTML = task;
+	document.querySelector('#entries').appendChild(iLI);
 
 	let inputData = document.getElementById("newTask");
 
@@ -15,10 +15,11 @@ function add(){
 
 	console.log(todos);		
 }
-function clearAll() {
-	var checkBox = document.getElementById("todo${item.itemid}");
-	let inputData = document.getElementById("newTask");
-	if (checkBox.checked == true){
-		document.getElementById("todo${item.itemid}").innerHTML = "";
-	}
-}
+// iDiv.innerHTML = "<input id='todo${item.itemid}' type='checkbox'/>&nbsp;" + 
+// function clearAll() {
+// 	var checkBox = document.getElementById("todo${item.itemid}");
+// 	let inputData = document.getElementById("newTask");
+// 	if (checkBox.checked == true){
+// 		document.getElementById("todo${item.itemid}").innerHTML = "";
+// 	}
+// }
